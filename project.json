@@ -10,13 +10,19 @@
       "defaultConfiguration": "production",
       "options": {
         "compiler": "babel",
-        "outputPath": "dist/solana-browser-libs",
+        "outputPath": "docs",
         "index": "src/index.html",
         "baseHref": "/",
-        "main": "src/main.tsx",
+        "generateIndexHtml": true,
+        "externalDependencies": "none",
+        "outputHashing": "none",
+        "namedChunks": false,
+        "runtimeChunk": false,
+        "main": "src/solana-bundle.ts",
+        "target": "web",
         "tsConfig": "tsconfig.app.json",
-        "assets": ["src/favicon.ico", "src/assets"],
-        "styles": ["src/styles.css"],
+        "assets": [],
+        "styles": [],
         "scripts": [],
         "webpackConfig": "webpack.config.js"
       },
@@ -28,17 +34,11 @@
           "vendorChunk": true
         },
         "production": {
-          "fileReplacements": [
-            {
-              "replace": "src/environments/environment.ts",
-              "with": "src/environments/environment.prod.ts"
-            }
-          ],
-          "optimization": true,
-          "outputHashing": "all",
+          "optimization": false,
+          "outputHashing": "none",
           "sourceMap": false,
           "namedChunks": false,
-          "extractLicenses": true,
+          "extractLicenses": false,
           "vendorChunk": false
         }
       }

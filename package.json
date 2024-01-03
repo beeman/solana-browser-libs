@@ -9,7 +9,10 @@
   },
   "private": true,
   "dependencies": {
+    "@solana/spl-token": "^0.3.10",
+    "@solana/web3.js": "^1.87.6",
     "@swc/helpers": "~0.5.2",
+    "buffer": "^6.0.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "tslib": "^2.3.0"
