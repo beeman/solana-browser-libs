@@ -34,6 +34,7 @@
           "vendorChunk": true
         },
         "production": {
+          "baseHref": "/solana-browser-libs/",
           "optimization": false,
           "outputHashing": "none",
           "sourceMap": false,
